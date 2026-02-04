@@ -49,9 +49,10 @@ const Header = () => {
 
           <div className="h-8 w-px bg-white/20"></div>
 
+          {/* DÜZELTİLEN KISIM: Masaüstü Linkleri */}
           <div className="flex gap-3">
             <a
-              href="https://linkedin.com/in/username"
+              href="https://www.linkedin.com/in/enessbyram/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 bg-white/10 hover:bg-white/20 cursor-pointer rounded-full p-2 transition-all flex items-center justify-center hover:scale-110 group"
@@ -60,7 +61,7 @@ const Header = () => {
             </a>
 
             <a
-              href="https://github.com/username"
+              href="https://github.com/enessbyram"
               target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 bg-white/10 hover:bg-white/20 cursor-pointer rounded-full p-2 transition-all flex items-center justify-center hover:scale-110 group"
@@ -102,7 +103,7 @@ const Header = () => {
           {/* Mobilde Menü İçi Sosyal İkonlar */}
           <div className="flex gap-6 mt-10">
             <a
-              href="https://linkedin.com/in/username"
+              href="https://www.linkedin.com/in/enessbyram/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/5 hover:bg-white/20 border border-white/10 cursor-pointer rounded-full flex items-center justify-center transition-all"
@@ -110,7 +111,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faLinkedin} className="text-white text-xl" />
             </a>
             <a
-              href="https://github.com/username"
+              href="https://github.com/enessbyram"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/5 hover:bg-white/20 border border-white/10 cursor-pointer rounded-full flex items-center justify-center transition-all"

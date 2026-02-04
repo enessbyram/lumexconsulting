@@ -17,8 +17,8 @@ export const projectsData = [
       "mobil uygulama desteği"
     ],
     technologies: ["react", "node.js", "mysql", "tailwind"],
-    githubLink: "#",
-    demoLink: "#",
+    githubLink: "https://github.com/enessbyram/gym-system",
+    demoLink: "https://gym-system.infinityfreeapp.com/?i=1",
     image: gymSystem
   },
   {

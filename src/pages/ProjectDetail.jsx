@@ -57,11 +57,11 @@ const ProjectDetail = () => {
 
             {/* Butonlar */}
             <div className="flex flex-wrap gap-4">
-                <a href={project.githubLink} className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors">
+                <a href={project.githubLink} target='_blank' className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors">
                     <FontAwesomeIcon icon={faGithub} />
                     github
                 </a>
-                <a href={project.demoLink} className="flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors">
+                <a href={project.demoLink} target="_blank" className="flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors">
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                     demo
                 </a>

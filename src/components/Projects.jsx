@@ -36,10 +36,9 @@ const Projects = () => {
 
       {/* --- PROJE 1: GYM SİSTEMİ --- */}
       <div className="w-full container max-w-7xl flex flex-col md:flex-row items-center gap-16 reveal-point transition-all duration-1000">
-        
         {/* Görsel - Link ile sarmalandı */}
-        <Link 
-          to="/project/gym-randevu-sistemi" 
+        <Link
+          to="/project/gym-randevu-sistemi"
           className="w-full md:w-3/5 overflow-hidden rounded-2xl group cursor-pointer block"
         >
           <img
@@ -88,17 +87,17 @@ const Projects = () => {
 
       {/* --- PROJE 2: DERSHANE SİSTEMİ --- */}
       <div className="w-full container max-w-7xl flex flex-col-reverse md:flex-row items-center gap-16 reveal-point transition-all duration-1000">
-        
         {/* Yazı Alanı */}
         <div className="w-full md:w-2/5 flex flex-col gap-6 text-white text-left md:text-right md:items-end">
           <div className="w-12 h-1 bg-white/50 mb-2"></div>
           <h3 className="text-4xl md:text-5xl font-bold leading-tight">
-            dershane yönetim <br /> sistemi
+            ev & araba satış <br /> platformu
           </h3>
           <p className="text-gray-400 text-lg leading-relaxed">
-            eğitim kurumları için kapsamlı dijital yönetim platformu. öğrenci
-            kayıt ve devam takibi, dinamik ders programlama, öğretmen
-            koordinasyonu.
+            hem gayrimenkul hem de araç satışı için tasarlanmış çift taraflı
+            marketplace platformu. gelişmiş filtreleme sistemi, coğrafi konum
+            bazlı arama, anlık mesajlaşma, fiyat takip sistemi ve güvenli ödeme
+            altyapısı ile kullanıcılarına en iyi deneyimi sunar.
           </p>
 
           {/* Teknolojiler */}
@@ -126,9 +125,9 @@ const Projects = () => {
         </div>
 
         {/* Görsel - Link ile sarmalandı */}
-        <Link 
-          to="/project/ev-araba-satis-platformu" 
-          className="w-full md:w-3/5 overflow-hidden group cursor-pointer block rounded-2xl" 
+        <Link
+          to="/project/ev-araba-satis-platformu"
+          className="w-full md:w-3/5 overflow-hidden group cursor-pointer block rounded-2xl"
           // Not: Görselin köşeleri için rounded-2xl ekledim, istersen kaldırabilirsin
         >
           <img
