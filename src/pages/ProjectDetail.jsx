@@ -21,7 +21,19 @@ const ProjectDetail = () => {
 
   // Eğer proje bulunamazsa
   if (!project) {
-    return <div className="text-white text-center pt-40">proje bulunamadı.</div>;
+    return (
+      <div className="relative min-h-screen font-sans selection:bg-purple-500 selection:text-white flex flex-col justify-between">
+         <AnimatedBackground />
+         <Header />
+         <div className="relative z-10 container mx-auto px-6 pt-40 text-center text-white">
+            <h1 className="text-3xl">proje bulunamadı.</h1>
+            <Link to="/services" className="mt-8 inline-block text-purple-400 hover:text-white transition-colors">
+              hizmetlere dön
+            </Link>
+         </div>
+         <Footer />
+      </div>
+    );
   }
 
   // --- FIX: Linkin iç (router) mi yoksa dış (href) mi olduğunu kontrol eden fonksiyon ---
@@ -34,6 +46,7 @@ const ProjectDetail = () => {
     }`;
 
     // Eğer link "/" ile başlıyorsa (örn: /coming-soon), React Router Link kullan
+    // HashRouter kullandığımız için bu linkler otomatik olarak /#/coming-soon şeklinde çalışacaktır.
     if (url && url.startsWith('/')) {
       return (
         <Link to={url} target="_blank" className={classes}>
@@ -66,6 +79,7 @@ const ProjectDetail = () => {
         </Link>
 
         {/* Büyük Kapak Görseli */}
+        {/* h-75 md:h-125 yerine standart Tailwind sınıfları veya style kullanıyoruz ki her sürümde çalışsın */}
         <div className="w-full h-75 md:h-125 rounded-3xl overflow-hidden mb-12 border border-white/10 shadow-2xl">
             <img 
                 src={project.image} 

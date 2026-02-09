@@ -11,20 +11,9 @@ const Header = () => {
   const closeMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className="w-full fixed top-0 left-0 h-24 flex items-center justify-center z-50 transition-all duration-300 backdrop-blur-xl bg-black/20 md:bg-black/10 border-b border-white/5 shadow-lg shadow-purple-900/5">
-      <nav className="w-full container mx-auto flex flex-row justify-between items-center px-6">
+    <header className="w-full fixed top-0 left-0 h-24 flex items-center justify-center z-50 backdrop-blur-md bg-black/10 text-white border-b border-white/5">
+      <nav className="w-full container mx-auto flex flex-row justify-between items-center px-6 relative z-50">
         
-        {/* --- HAMBURGER MENU --- */}
-        <div className="md:hidden z-50">
-            <button 
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-                className="text-2xl text-white focus:outline-none hover:text-purple-400 transition-colors p-2"
-            >
-                <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
-            </button>
-        </div>
-
-        {/* --- DESKTOP LEFT MENU --- */}
         <div className="hidden md:flex flex-row gap-8 font-light tracking-wide">
           <Link to="/" className="cursor-pointer hover:text-purple-400 transition-colors">
             Ana Sayfa
@@ -34,12 +23,10 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* --- LOGO --- */}
-        <Link to="/" className="w-28 md:w-32 cursor-pointer z-50" onClick={closeMenu}>
+        <Link to="/" className="w-32 cursor-pointer" onClick={closeMenu}>
           <img src={logo} alt="logo" className="w-full h-auto object-contain" />
         </Link>
 
-        {/* --- DESKTOP RIGHT MENU --- */}
         <div className="hidden md:flex flex-row gap-6 items-center">
           <Link to="/about" className="cursor-pointer hover:text-purple-400 transition-colors font-light">
             Hakkımızda
@@ -67,31 +54,39 @@ const Header = () => {
             </a>
           </div>
         </div>
+
+        <div className="md:hidden">
+            <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+                className="text-2xl text-white focus:outline-none hover:text-purple-400 transition-colors"
+            >
+                <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+            </button>
+        </div>
       </nav>
 
-      {/* --- MOBİL MENÜ --- */}
       <div 
-        className={`fixed inset-0 top-24 w-full h-[calc(100vh-6rem)] bg-black/80 backdrop-blur-[20px] border-t border-white/10 flex flex-col items-center justify-start pt-20 gap-10 md:hidden transition-all duration-500 ease-in-out ${
-          isMobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-5 pointer-events-none'
+        className={`fixed inset-0 top-0 w-full h-screen bg-black/60 backdrop-blur-3xl flex flex-col items-center justify-center gap-10 md:hidden transition-all duration-500 ease-in-out z-40 ${
+          isMobileMenuOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none'
         }`}
       >
           <Link 
               to="/" 
-              className="text-2xl font-light tracking-widest hover:text-purple-400 transition-colors"
+              className="text-3xl font-light tracking-widest hover:text-purple-400 transition-colors"
               onClick={closeMenu}
           >
               ana sayfa
           </Link>
           <Link 
               to="/services" 
-              className="text-2xl font-light tracking-widest hover:text-purple-400 transition-colors"
+              className="text-3xl font-light tracking-widest hover:text-purple-400 transition-colors"
               onClick={closeMenu}
           >
               hizmetlerimiz
           </Link>
           <Link 
               to="/about" 
-              className="text-2xl font-light tracking-widest hover:text-purple-400 transition-colors"
+              className="text-3xl font-light tracking-widest hover:text-purple-400 transition-colors"
               onClick={closeMenu}
           >
               hakkımızda

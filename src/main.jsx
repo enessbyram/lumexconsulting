@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './pages/App.jsx'
+import App from './pages/App' 
 import './index.css'
-import { HashRouter } from 'react-router-dom' // Bunu ekle
+import { HashRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter basename='lumexconsulting'> {/* Bunu ekle */}
+    <HashRouter> 
       <App />
-    </HashRouter> {/* Bunu ekle */}
+    </HashRouter>
   </React.StrictMode>,
 )
