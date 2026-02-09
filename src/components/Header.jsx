@@ -8,19 +8,17 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Linke tıklayınca menüyü kapat
   const closeMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    // Header'ın kendisi de fixed ve cam efektli
-    <header className="w-full fixed top-0 left-0 h-24 flex items-center justify-center z-50 backdrop-blur-md bg-black/10 text-white border-b border-white/5 transition-all duration-300">
+    <header className="w-full fixed top-0 left-0 h-24 flex items-center justify-center z-50 transition-all duration-300 backdrop-blur-xl bg-black/20 md:bg-black/10 border-b border-white/5 shadow-lg shadow-purple-900/5">
       <nav className="w-full container mx-auto flex flex-row justify-between items-center px-6">
         
-        {/* --- HAMBURGER MENU BUTTON (Mobile) --- */}
+        {/* --- HAMBURGER MENU --- */}
         <div className="md:hidden z-50">
             <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-                className="text-2xl text-white focus:outline-none hover:text-purple-400 transition-colors"
+                className="text-2xl text-white focus:outline-none hover:text-purple-400 transition-colors p-2"
             >
                 <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
             </button>
@@ -37,7 +35,7 @@ const Header = () => {
         </div>
 
         {/* --- LOGO --- */}
-        <Link to="/" className="w-32 cursor-pointer z-50" onClick={closeMenu}>
+        <Link to="/" className="w-28 md:w-32 cursor-pointer z-50" onClick={closeMenu}>
           <img src={logo} alt="logo" className="w-full h-auto object-contain" />
         </Link>
 
@@ -49,7 +47,6 @@ const Header = () => {
 
           <div className="h-8 w-px bg-white/20"></div>
 
-          {/* DÜZELTİLEN KISIM: Masaüstü Linkleri */}
           <div className="flex gap-3">
             <a
               href="https://www.linkedin.com/in/enessbyram/"
@@ -70,11 +67,11 @@ const Header = () => {
             </a>
           </div>
         </div>
-        
       </nav>
 
+      {/* --- MOBİL MENÜ --- */}
       <div 
-        className={`fixed inset-0 top-24 w-full h-[calc(100vh-6rem)] bg-black/60 backdrop-blur-3xl border-t border-white/10 flex flex-col items-center justify-start pt-20 gap-10 md:hidden transition-all duration-500 ease-in-out ${
+        className={`fixed inset-0 top-24 w-full h-[calc(100vh-6rem)] bg-black/80 backdrop-blur-[20px] border-t border-white/10 flex flex-col items-center justify-start pt-20 gap-10 md:hidden transition-all duration-500 ease-in-out ${
           isMobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-5 pointer-events-none'
         }`}
       >
@@ -100,7 +97,6 @@ const Header = () => {
               hakkımızda
           </Link>
 
-          {/* Mobilde Menü İçi Sosyal İkonlar */}
           <div className="flex gap-6 mt-10">
             <a
               href="https://www.linkedin.com/in/enessbyram/"
