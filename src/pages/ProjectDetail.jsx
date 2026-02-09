@@ -6,10 +6,10 @@ import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faArrowLeft, faExternalLinkAlt, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectDetail = () => {
-  const { id } = useParams(); // URL'den ID'yi al (örn: gym-randevu-sistemi)
+  const { id } = useParams(); // URL'den ID'yi al
   
   // İlgili projeyi bul
   const project = projectsData.find(p => p.id === id);
@@ -19,10 +19,38 @@ const ProjectDetail = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  // Eğer proje bulunamazsa (örn: yanlış link)
+  // Eğer proje bulunamazsa
   if (!project) {
     return <div className="text-white text-center pt-40">proje bulunamadı.</div>;
   }
+
+  // --- FIX: Linkin iç (router) mi yoksa dış (href) mi olduğunu kontrol eden fonksiyon ---
+  const renderLink = (url, label, icon, isPrimary) => {
+    // Ortak CSS sınıfları (Tasarım bozulmasın diye aynen korundu)
+    const classes = `flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-colors ${
+      isPrimary 
+        ? "bg-white text-black hover:bg-gray-200" 
+        : "border border-white/20 text-white hover:bg-white/10"
+    }`;
+
+    // Eğer link "/" ile başlıyorsa (örn: /coming-soon), React Router Link kullan
+    if (url && url.startsWith('/')) {
+      return (
+        <Link to={url} target="_blank" className={classes}>
+           <FontAwesomeIcon icon={icon} />
+           {label}
+        </Link>
+      );
+    }
+
+    // Değilse normal a etiketi kullan (Github, Demo vb.)
+    return (
+      <a href={url} target="_blank" rel="noopener noreferrer" className={classes}>
+         <FontAwesomeIcon icon={icon} />
+         {label}
+      </a>
+    );
+  };
 
   return (
     <div className="relative min-h-screen font-sans selection:bg-purple-500 selection:text-white flex flex-col justify-between">
@@ -55,16 +83,10 @@ const ProjectDetail = () => {
                 {project.fullDesc}
             </p>
 
-            {/* Butonlar */}
+            {/* Butonlar (FIX Uygulandı) */}
             <div className="flex flex-wrap gap-4">
-                <a href={project.githubLink} target='_blank' className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors">
-                    <FontAwesomeIcon icon={faGithub} />
-                    github
-                </a>
-                <a href={project.demoLink} target="_blank" className="flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors">
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
-                    demo
-                </a>
+                {renderLink(project.githubLink, "github", faGithub, true)}
+                {renderLink(project.demoLink, "demo", faExternalLinkAlt, false)}
             </div>
         </div>
 

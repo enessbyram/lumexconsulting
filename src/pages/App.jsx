@@ -9,6 +9,7 @@ import ScrollToTop from "../components/ScrollToTop"; // YENİ IMPORT
 import About from "../pages/About";
 import Services from "../pages/Services";
 import ProjectDetail from "../pages/ProjectDetail";
+import ComingSoon from "../pages/ComingSoon";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
       </Routes>
     </div>
   );
