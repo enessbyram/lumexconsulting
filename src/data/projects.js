@@ -1,7 +1,8 @@
 // src/data/projects.js
 import gymSystem from "../assets/images/gym-system.png";
 import realEstateSystem from "../assets/images/saling-system.png"; 
-import todoApp from "../assets/images/todo-app.png"; // Yeni indirdiğin görseli buraya bağla
+import todoApp from "../assets/images/todo-app.png"; 
+import communitySystem from "../assets/images/community-system.png"; // <-- Yeni eklendi (Görseli bu isimle klasöre atarsın)
 
 export const projectsData = [
   {
@@ -63,4 +64,24 @@ export const projectsData = [
     demoLink: "/coming-soon",
     image: realEstateSystem,
   },
+  {
+    id: "universite-topluluk-bilgi-sistemi",
+    title: "üniversite topluluk bilgi sistemi",
+    shortDesc:
+      "üniversite öğrenci toplulukları için geliştirilmiş; 4 farklı yetki seviyesine sahip kapsamlı yönetim ve etkinlik platformu.",
+    fullDesc:
+      "kampüs hayatını dijitalleştiren ve süreçleri hızlandıran modern bir topluluk bilgi sistemi. next.js app router mimarisi kullanılarak tam teşekküllü geliştirilmiştir. sistemde; standart öğrenciler, topluluk yönetim kurulları (başkanlar), akademik danışmanlar ve sks idari personeli için özel tasarlanmış dört farklı yönetim paneli (dashboard) bulunur. etkinlik başvuruları, üye onayları, belge yönetimi ve kurumsal hafıza gibi tüm süreçler bu platform üzerinden hiyerarşik bir şekilde yönetilir.",
+    features: [
+      "4 farklı kullanıcı rolü ve role özel dashboard ekranları",
+      "hiyerarşik etkinlik ve belge onay mekanizması",
+      "dinamik üye ve yönetim kurulu rol kontrolü",
+      "kurumsal hafıza (geçmiş onay/red ve rapor arşivi)",
+      "etkileşimli etkinlik takvimi ve duyuru yönetimi",
+      "gelişmiş ui/ux (tailwind css v4 & lucide ikonları)"
+    ],
+    technologies: ["next.js", "react", "tailwind css", "mysql"],
+    githubLink: "/coming-soon",
+    demoLink: "/coming-soon",
+    image: communitySystem,
+  }
 ];
