@@ -80,8 +80,8 @@ export const projectsData = [
       "gelişmiş ui/ux (tailwind css v4 & lucide ikonları)"
     ],
     technologies: ["next.js", "react", "tailwind css", "mysql"],
-    githubLink: "/coming-soon",
-    demoLink: "/coming-soon",
+    githubLink: "https://lumex-community-system.vercel.app/",
+    demoLink: "https://github.com/enessbyram/lumex-community-system",
     image: communitySystem,
   }
 ];
