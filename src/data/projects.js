@@ -1,4 +1,3 @@
-// src/data/projects.js
 import gymSystem from "../assets/images/gym-system.png";
 import realEstateSystem from "../assets/images/saling-system.png"; 
 import todoApp from "../assets/images/todo-app.png"; 
@@ -80,8 +79,8 @@ export const projectsData = [
       "gelişmiş ui/ux (tailwind css v4 & lucide ikonları)"
     ],
     technologies: ["next.js", "react", "tailwind css", "mysql"],
-    githubLink: "https://lumex-community-system.vercel.app/",
-    demoLink: "https://github.com/enessbyram/lumex-community-system",
+    demoLink: "https://lumex-community-system.vercel.app/",
+    githubLink: "https://github.com/enessbyram/lumex-community-system",
     image: communitySystem,
   }
 ];
