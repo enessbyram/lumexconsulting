@@ -5,26 +5,6 @@ import communitySystem from "../assets/images/community-system.png"; // <-- Yeni
 
 export const projectsData = [
   {
-    id: "modern-todo-app",
-    title: "modern to-do app",
-    shortDesc:
-      "next.js ve tailwind css ile geliştirilmiş, gelişmiş filtreleme ve düzenleme özelliklerine sahip görev yönetim sistemi.",
-    fullDesc:
-      "modern web geliştirme standartlarına uygun olarak inşa edilmiş bir yapılacaklar listesi uygulaması. next.js app router yapısı kullanılarak geliştirilmiştir. kullanıcıların görev ekleme, listeleme, güncelleme ve silme (crud) işlemlerini yapmasına olanak tanır. veriler localstorage üzerinde saklandığı için sayfa yenilense dahi kaybolmaz. şık tasarımı ve karanlık mod uyumuyla yüksek kullanıcı deneyimi sunar.",
-    features: [
-      "full crud (ekle, listele, güncelle, sil) operasyonları",
-      "durum bazlı filtreleme (yapılacaklar, tamamlananlar, silinenler)",
-      "localstorage ile kalıcı veri yönetimi",
-      "soft-delete (silinenleri geri yükleme) özelliği",
-      "responsive ve modern kullanıcı arayüzü",
-      "next.js ile optimize edilmiş performans",
-    ],
-    technologies: ["next.js", "react", "tailwind css", "localstorage"],
-    githubLink: "https://github.com/enessbyram/Modern-To-Do-App",
-    demoLink: "https://heroic-choux-abbe4e.netlify.app/",
-    image: todoApp,
-  },
-  {
     id: "gym-randevu-sistemi",
     title: "gym randevu sistemi",
     shortDesc:
