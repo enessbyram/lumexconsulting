@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AnimatedBackground from '../components/AnimatedBackground';
@@ -7,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const ComingSoon = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative min-h-screen font-sans selection:bg-purple-500 selection:text-white flex flex-col justify-between mt-20">
       
@@ -26,14 +28,13 @@ const ComingSoon = () => {
 
         <div className="space-y-6 max-w-2xl">
             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
-                çok yakında
+                {t('comingSoon.title')}
             </h1>
             
             <div className="h-1 w-24 bg-linear-to-r from-purple-500 to-blue-500 mx-auto rounded-full"></div>
             
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-light">
-                bu projenin geliştirme süreçleri titizlikle devam ediyor. <br className="hidden md:block"/>
-                kodlarımızı derliyor, tasarımı parlatıyoruz. en kısa sürede yayındayız.
+                {t('comingSoon.description')}
             </p>
         </div>
 
@@ -42,7 +43,7 @@ const ComingSoon = () => {
             className="mt-12 px-8 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/30 text-white transition-all flex items-center gap-3 group"
         >
             <FontAwesomeIcon icon={faArrowLeft} className="group-hover:-translate-x-1 transition-transform"/>
-            projelere dön
+            {t('projects.backToProjects')}
         </Link>
 
       </main>

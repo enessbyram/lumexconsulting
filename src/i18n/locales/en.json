@@ -1,0 +1,103 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us"
+  },
+  "hero": {
+    "tagline": "Leave Your Mark In The Digital World",
+    "subtitle": "Web Solutions That Carry Your Brand Into The Future"
+  },
+  "projects": {
+    "title": "Our Works",
+    "viewDetails": "View Details",
+    "andMore": "And More",
+    "back": "Back",
+    "backToProjects": "Back To Projects",
+    "projectNotFound": "Project Not Found.",
+    "backToServices": "Back To Services"
+  },
+  "services": {
+    "title": "Services",
+    "lumexTutoringCenter": {
+      "title": "Lumex Tutoring Center Management System",
+      "shortDesc": "A comprehensive platform developed for educational institutions with student tracking, class schedule management and exam result analysis.",
+      "fullDesc": "A modern management panel designed for the digital transformation of educational centers. Developed using Next.js App Router architecture and TiDB Cloud database infrastructure. The system consolidates critical processes such as class scheduling, assignment distribution and submission processes, instant messaging, attendance tracking and exam result reporting in a single platform.",
+      "features": [
+        "Class schedule and weekly schedule management",
+        "Assignment distribution, submission and feedback system",
+        "Advanced exam result analytics and reporting",
+        "Student, teacher and admin panels",
+        "Secure cloud database integration with TiDB Cloud",
+        "Modern UI/UX Design and Mobile Compatibility"
+      ]
+    },
+    "universityCommunitySystem": {
+      "title": "University Community Information System",
+      "shortDesc": "A comprehensive management and event platform developed for university student communities with 4 different authorization levels.",
+      "fullDesc": "A modern community information system that digitizes campus life and accelerates processes. Fully developed using Next.js App Router architecture. The system features four different management panels specially designed for standard students, community management boards, academic advisors and SKS administrative personnel. All processes such as event applications, member approvals and institutional memory are managed hierarchically.",
+      "features": [
+        "4 Different User Roles and Role-Specific Dashboard Screens",
+        "Hierarchical Event and Document Approval Mechanism",
+        "Dynamic Member and Management Board Role Control",
+        "Institutional Memory (Past Approvals/Rejections and Report Archive)",
+        "Interactive Event Calendar and Announcement Management",
+        "Advanced UI/UX (Tailwind CSS v4 & Lucide Icons)"
+      ]
+    },
+    "gymAppointmentSystem": {
+      "title": "Gym Appointment And Management System",
+      "shortDesc": "Fully integrated member management for fitness studios, personal trainer appointments and online payment infrastructure.",
+      "fullDesc": "A comprehensive management platform designed for modern fitness studios. It includes member registration and tracking system, personal trainer appointment management, online payment infrastructure, nutrition program tracking and performance analytics.",
+      "features": [
+        "Member Management System and Profile Tracking",
+        "Personal Trainer Appointment Calendar",
+        "Online Payment and Subscription Management",
+        "Nutrition Program and Calorie Tracking",
+        "Performance Analytics and Reports",
+        "Mobile Application Support"
+      ]
+    },
+    "realEstateCarSales": {
+      "title": "Real Estate And Car Sales Platform",
+      "shortDesc": "Real Estate and Vehicle Buying-Selling Platform with Advanced Filtering and Secure Messaging System.",
+      "fullDesc": "A Two-Sided Marketplace Platform Designed for Both Real Estate and Vehicle Sales. It Features an Advanced Filtering System, Location-Based Search and Real-Time Messaging Between Users.",
+      "features": [
+        "Two-Category Marketplace (Real Estate & Vehicle)",
+        "Advanced Filtering and Search System",
+        "Map-Based Location Display",
+        "Real-Time Messaging System",
+        "Price Tracking and Notification System"
+      ]
+    },
+    "smartProgramSystem": {
+      "title": "Smart Program System",
+      "shortDesc": "An Intelligent Program Management And Automation System For Streamlining Complex Business Processes.",
+      "fullDesc": "The Smart Program System Is An Intelligent Solution Designed To Automate And Optimize Complex Business Workflows. This System Provides Intelligent Scheduling, Resource Management, And Performance Analytics To Help Organizations Achieve Their Goals More Efficiently.",
+      "features": [
+        "Intelligent Process Automation",
+        "Advanced Scheduling and Resource Allocation",
+        "Real-Time Performance Analytics",
+        "Custom Workflow Configuration",
+        "Integration With Existing Systems",
+        "Comprehensive Reporting and Insights"
+      ]
+    }
+  },
+  "features": "Features",
+  "technologies": "Technologies",
+  "about": {
+    "title": "About Us",
+    "description": "At Lumex Consulting, we stand by your side throughout your digital transformation journey. With our minimal design philosophy and emphasis on user experience, we create functional and aesthetic web solutions. For us, every project is a new story, and every brand is a unique experience.",
+    "generalInquiries": "For General Inquiries",
+    "enesBayram": "Enes Bayram",
+    "ozgunBiberoglu": "Özgün Biberoğlu"
+  },
+  "footer": {
+    "copyright": "© 2026 Lumex Consulting. All Rights Reserved."
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "description": "The Development Process Of This Project Is Carefully Underway. We're Compiling Our Code And Polishing The Design. Launching Very Soon."
+  }
+}

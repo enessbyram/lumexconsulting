@@ -1,10 +1,18 @@
 import React, { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import { projectsData } from '../data/projects';
 import gymSystem from "../assets/images/gym-system.png";
 import salingSystem from "../assets/images/saling-system.png";
-import { Link } from "react-router-dom"; // Link import edildi
+import { Link } from "react-router-dom";
 
 const Projects = () => {
-  // Animasyon tetikleyici (Scroll Observer)
+  const { t } = useTranslation();
+
+  // Get the two featured projects directly from projectsData
+  const gymProject = projectsData.find(p => p.id === "gym-randevu-sistemi");
+  const realEstateProject = projectsData.find(p => p.id === "ev-araba-satis-platformu");
+
+  // Scroll reveal animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,42 +35,40 @@ const Projects = () => {
 
   return (
     <section className="w-full min-h-screen flex flex-col items-center py-20 px-6 gap-32">
-      {/* Başlık Alanı */}
+      {/* Section Title */}
       <div className="w-full container max-w-7xl reveal-point transition-all duration-1000">
         <h2 className="text-white text-4xl md:text-6xl font-bold tracking-tight">
-          bazı çalışmalarımız
+          {t('projects.title')}
         </h2>
       </div>
 
-      {/* --- PROJE 1: GYM SİSTEMİ --- */}
+      {/* --- PROJECT 1: GYM SYSTEM --- */}
       <div className="w-full container max-w-7xl flex flex-col md:flex-row items-center gap-16 reveal-point transition-all duration-1000">
-        {/* Görsel - Link ile sarmalandı */}
+        {/* Image - Wrapped with Link */}
         <Link
           to="/project/gym-randevu-sistemi"
           className="w-full md:w-3/5 overflow-hidden rounded-2xl group cursor-pointer block"
         >
           <img
             src={gymSystem}
-            alt="Gym Randevu Sistemi"
+            alt={t(gymProject.titleKey)}
             className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
           />
         </Link>
 
-        {/* Yazı Alanı */}
+        {/* Text Area */}
         <div className="w-full md:w-2/5 flex flex-col gap-6 text-white">
           <div className="w-12 h-1 bg-white/50 mb-2"></div>
           <h3 className="text-4xl md:text-5xl font-bold leading-tight">
-            gym randevu <br /> sistemi
+            {t(gymProject.titleKey)}
           </h3>
           <p className="text-gray-400 text-lg leading-relaxed">
-            fitness salonları için tam entegre üye yönetimi, kişisel antrenör
-            randevuları, grup dersleri planlaması, online ödeme sistemi ve
-            detaylı performans takibi.
+            {t(gymProject.shortDescKey)}
           </p>
 
-          {/* Teknolojiler */}
+          {/* Technologies */}
           <div className="flex flex-wrap gap-3 mt-2">
-            {["react", "php", "mysql", "tailwind"].map((tag) => (
+            {gymProject.technologies.map((tag) => (
               <span
                 key={tag}
                 className="px-4 py-1 rounded-full border border-white/20 text-sm text-gray-400 bg-white/5 transition-all duration-300 hover:bg-white/20 hover:text-white hover:border-white/50 cursor-default"
@@ -72,12 +78,12 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Detay Linki - 'a' etiketi yerine Link kullanıldı */}
+          {/* Detail Link */}
           <Link
             to="/project/gym-randevu-sistemi"
             className="mt-4 text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
           >
-            detayları gör{" "}
+            {t('projects.viewDetails')}{" "}
             <span className="group-hover:translate-x-1 transition-transform">
               →
             </span>
@@ -85,24 +91,21 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* --- PROJE 2: DERSHANE SİSTEMİ --- */}
+      {/* --- PROJECT 2: REAL ESTATE & CAR SALES --- */}
       <div className="w-full container max-w-7xl flex flex-col-reverse md:flex-row items-center gap-16 reveal-point transition-all duration-1000">
-        {/* Yazı Alanı */}
+        {/* Text Area */}
         <div className="w-full md:w-2/5 flex flex-col gap-6 text-white text-left md:text-right md:items-end">
           <div className="w-12 h-1 bg-white/50 mb-2"></div>
           <h3 className="text-4xl md:text-5xl font-bold leading-tight">
-            ev & araba satış <br /> platformu
+            {t(realEstateProject.titleKey)}
           </h3>
           <p className="text-gray-400 text-lg leading-relaxed">
-            hem gayrimenkul hem de araç satışı için tasarlanmış çift taraflı
-            marketplace platformu. gelişmiş filtreleme sistemi, coğrafi konum
-            bazlı arama, anlık mesajlaşma, fiyat takip sistemi ve güvenli ödeme
-            altyapısı ile kullanıcılarına en iyi deneyimi sunar.
+            {t(realEstateProject.shortDescKey)}
           </p>
 
-          {/* Teknolojiler */}
+          {/* Technologies */}
           <div className="flex flex-wrap gap-3 mt-2 justify-start md:justify-end">
-            {["react.js", "mysql", "php", "tailwind"].map((tag) => (
+            {realEstateProject.technologies.map((tag) => (
               <span
                 key={tag}
                 className="px-4 py-1 rounded-full border border-white/20 text-sm text-gray-400 bg-white/5 transition-all duration-300 hover:bg-white/20 hover:text-white hover:border-white/50 cursor-default"
@@ -112,39 +115,38 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Detay Linki - 'a' etiketi yerine Link kullanıldı */}
+          {/* Detail Link */}
           <Link
             to="/project/ev-araba-satis-platformu"
             className="mt-4 text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
           >
-            detayları gör{" "}
+            {t('projects.viewDetails')}{" "}
             <span className="group-hover:translate-x-1 transition-transform">
               →
             </span>
           </Link>
         </div>
 
-        {/* Görsel - Link ile sarmalandı */}
+        {/* Image - Wrapped with Link */}
         <Link
           to="/project/ev-araba-satis-platformu"
           className="w-full md:w-3/5 overflow-hidden group cursor-pointer block rounded-2xl"
-          // Not: Görselin köşeleri için rounded-2xl ekledim, istersen kaldırabilirsin
         >
           <img
             src={salingSystem}
-            alt="Dershane Yönetim Sistemi"
+            alt={t(realEstateProject.titleKey)}
             className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
           />
         </Link>
       </div>
 
-      {/* Ve devamı linki (Doğru şekilde ayarlanmış) */}
+      {/* And More Link */}
       <div className="w-full container max-w-7xl flex justify-end reveal-point transition-all duration-1000">
         <Link
           to="/services"
           className="text-lg text-white/70 hover:text-white transition-colors flex items-center gap-3 group"
         >
-          ve devamı{" "}
+          {t('projects.andMore')}{" "}
           <span className="group-hover:translate-x-2 transition-transform">
             →
           </span>

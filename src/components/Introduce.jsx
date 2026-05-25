@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from 'react-i18next';
 
 const Introduce = () => {
+  const { t } = useTranslation();
+
   return (
     <main className='flex flex-col min-h-screen w-full items-center justify-center gap-8 pt-20 px-4 text-white text-center'>
         
@@ -10,11 +13,11 @@ const Introduce = () => {
         </h2>
         
         <h1 className='font-bold text-5xl md:text-8xl lg:text-9xl max-w-5xl leading-tight bg-clip-text text-transparent bg-linear-to-b from-white via-white to-white/50 pb-2'>
-            dijital dünyada iz bırakın
+            {t('hero.tagline')}
         </h1>
         
         <p className='text-lg md:text-2xl font-light text-gray-300 max-w-2xl'>
-            markanızı geleceğe taşıyan web çözümleri
+            {t('hero.subtitle')}
         </p>
         
         <div className='mt-10 animate-bounce'>

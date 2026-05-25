@@ -1,0 +1,103 @@
+{
+  "header": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "aboutUs": "Hakkımızda"
+  },
+  "hero": {
+    "tagline": "Dijital Dünyada İz Bırakın",
+    "subtitle": "Markanızı Geleceğe Taşıyan Web Çözümleri"
+  },
+  "projects": {
+    "title": "Bazı Çalışmalarımız",
+    "viewDetails": "Detayları Gör",
+    "andMore": "Ve Devamı",
+    "back": "Geri Dön",
+    "backToProjects": "Projelere Dön",
+    "projectNotFound": "Proje Bulunamadı.",
+    "backToServices": "Hizmetlere Dön"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "lumexTutoringCenter": {
+      "title": "Lumex Eğitim Kurumları Yönetim Sistemi",
+      "shortDesc": "Eğitim Kurumları İçin Geliştirilmiş; Öğrenci Takibi, Ders Programı Yönetimi Ve Sınav Sonuç Analizi Sunan Kapsamlı Bir Platform.",
+      "fullDesc": "Eğitim Merkezlerinin Dijital Dönüşümü İçin Tasarlanmış Modern Bir Yönetim Panelidir. Next.js App Router Mimarisi Ve TiDB Cloud Veritabanı Altyapısı Kullanılarak Geliştirilmiştir. Sistem; Ders Programı Oluşturma, Ödev Atama Ve Teslim Süreçleri, Anlık Mesajlaşma, Yoklama Takibi Ve Sınav Sonuç Raporlama Gibi Kritik Süreçleri Tek Bir Platformda Toplar.",
+      "features": [
+        "Ders Programı ve Haftalık Takvim Yönetimi",
+        "Ödev Atama, Teslim ve Geri Bildirim Sistemi",
+        "Gelişmiş Sınav Sonuç Analitiği ve Raporlama",
+        "Öğrenci, Öğretmen ve Yönetici Panelleri",
+        "TiDB Cloud ile Güvenli Bulut Veritabanı Entegrasyonu",
+        "Modern Arayüz Tasarımı ve Mobil Uyumluluk"
+      ]
+    },
+    "universityCommunitySystem": {
+      "title": "Üniversite Topluluk Bilgi Sistemi",
+      "shortDesc": "Üniversite Öğrenci Toplulukları İçin Geliştirilmiş; 4 Farklı Yetki Seviyesine Sahip Kapsamlı Yönetim Ve Etkinlik Platformu.",
+      "fullDesc": "Kampüs Hayatını Dijitalleştiren Ve Süreçleri Hızlandıran Modern Bir Topluluk Bilgi Sistemi. Next.js App Router Mimarisi Kullanılarak Tam Teşekküllü Geliştirilmiştir. Sistemde; Standart Öğrenciler, Topluluk Yönetim Kurulları, Akademik Danışmanlar Ve SKS İdari Personeli İçin Özel Tasarlanmış Dört Farklı Yönetim Paneli Bulunur. Etkinlik Başvuruları, Üye Onayları Ve Kurumsal Hafıza Gibi Tüm Süreçler Hiyerarşik Bir Şekilde Yönetilir.",
+      "features": [
+        "4 Farklı Kullanıcı Rolü ve Role Özel Gösterge Paneli",
+        "Hiyerarşik Etkinlik ve Belge Onay Mekanizması",
+        "Dinamik Üye ve Yönetim Kurulu Rol Kontrolü",
+        "Kurumsal Hafıza (Geçmiş Onaylar/Redler ve Rapor Arşivi)",
+        "Etkileşimli Etkinlik Takvimi ve Duyuru Yönetimi",
+        "Gelişmiş Arayüz Tasarımı (Tailwind CSS v4 ve Lucide Icons)"
+      ]
+    },
+    "gymAppointmentSystem": {
+      "title": "Gym Randevu Ve Yönetim Sistemi",
+      "shortDesc": "Fitness Salonları İçin Tam Entegre Üye Yönetimi, Kişisel Antrenör Randevuları Ve Online Ödeme Altyapısı.",
+      "fullDesc": "Modern Fitness Salonları İçin Tasarlanmış Kapsamlı Bir Yönetim Platformudur. Üye Kayıt Ve Takip Sistemi, Kişisel Antrenör Randevu Yönetimi, Online Ödeme Altyapısı, Beslenme Programı Takibi Ve Performans Analitiği İçerir.",
+      "features": [
+        "Üye Yönetim Sistemi ve Profil Takibi",
+        "Kişisel Antrenör Randevu Takvimi",
+        "Online Ödeme ve Abonelik Yönetimi",
+        "Beslenme Programı ve Kalori Takibi",
+        "Performans Analitiği ve Raporlar",
+        "Mobil Uygulama Desteği"
+      ]
+    },
+    "realEstateCarSales": {
+      "title": "Ev Ve Araba Satış Platformu",
+      "shortDesc": "Gayrimenkul Ve Araç Alım-Satım Platformu, Detaylı Filtreleme Ve Güvenli Mesajlaşma Sistemi.",
+      "fullDesc": "Hem Gayrimenkul Hem De Araç Satışı İçin Tasarlanmış Çift Taraflı Marketplace Platformudur. Gelişmiş Filtreleme Sistemi, Coğrafi Konum Bazlı Arama Ve Kullanıcılar Arası Anlık Mesajlaşma Özellikleri Sunar.",
+      "features": [
+        "İki Kategorili Marketplace (Gayrimenkul ve Araç)",
+        "Gelişmiş Filtreleme ve Arama Sistemi",
+        "Harita Tabanlı Konum Görüntüleme",
+        "Gerçek Zamanlı Mesajlaşma Sistemi",
+        "Fiyat Takip ve Bildirim Sistemi"
+      ]
+    },
+    "smartProgramSystem": {
+      "title": "Smart Program System",
+      "shortDesc": "Karmaşık İş Süreçlerini Kolaylaştırmak İçin Tasarlanmış Akıllı Program Yönetimi Ve Otomasyon Sistemi.",
+      "fullDesc": "Smart Program System, Karmaşık İş Akışlarını Otomatikleştirmek Ve Optimize Etmek İçin Tasarlanmış Akıllı Bir Çözümdür. Bu Sistem, Kuruluşların Hedeflerine Daha Verimli Bir Şekilde Ulaşmalarına Yardımcı Olmak İçin Akıllı Zamanlama, Kaynak Yönetimi Ve Performans Analitiği Sağlar.",
+      "features": [
+        "Akıllı Süreç Otomasyonu",
+        "Gelişmiş Zamanlama ve Kaynak Tahsisi",
+        "Gerçek Zamanlı Performans Analitiği",
+        "Özel İş Akışı Yapılandırması",
+        "Mevcut Sistemlerle Entegrasyon",
+        "Kapsamlı Raporlama ve Analizler"
+      ]
+    }
+  },
+  "features": "Özellikler",
+  "technologies": "Teknolojiler",
+  "about": {
+    "title": "Hakkımızda",
+    "description": "Lumex Consulting Olarak, Markaların Dijital Dönüşüm Yolculuğunda Yanlarında Oluyoruz. Minimal Tasarım Anlayışımız Ve Kullanıcı Deneyimine Verdiğimiz Önemle, İşlevsel Ve Estetik Web Çözümleri Üretiyoruz. Her Proje Bizim İçin Yeni Bir Hikaye, Her Marka Bizim İçin Eşsiz Bir Deneyim.",
+    "generalInquiries": "Genel Sorularınız İçin",
+    "enesBayram": "Enes Bayram",
+    "ozgunBiberoglu": "Özgün Biberoğlu"
+  },
+  "footer": {
+    "copyright": "© 2026 Lumex Consulting. Tüm Hakları Saklıdır."
+  },
+  "comingSoon": {
+    "title": "Çok Yakında",
+    "description": "Bu Projenin Geliştirme Süreçleri Titizlikle Devam Ediyor. Kodlarımızı Derliyor, Tasarımı Parlatıyoruz. En Kısa Sürede Yayındayız."
+  }
+}

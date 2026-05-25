@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AnimatedBackground from "../components/AnimatedBackground";
@@ -6,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -34,14 +36,10 @@ const About = () => {
         <div className="w-full max-w-4xl text-center md:text-left mb-20 reveal-point transition-all duration-1000">
           <div className="w-16 h-1 bg-white/50 mb-6 mx-auto md:mx-0"></div>
           <h1 className="text-white text-5xl md:text-6xl font-light mb-8">
-            hakkımızda
+            {t('about.title')}
           </h1>
           <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-light">
-            lumex consulting olarak, markaların dijital dönüşüm yolculuğunda
-            yanlarında oluyoruz. minimal tasarım anlayışımız ve kullanıcı
-            deneyimine verdiğimiz önemle, işlevsel ve estetik web çözümleri
-            üretiyoruz. her proje bizim için yeni bir hikaye, her marka bizim
-            için eşsiz bir deneyim.
+            {t('about.description')}
           </p>
         </div>
 
@@ -49,7 +47,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mb-16 reveal-point transition-all duration-1000 delay-200">
           <div className="border border-white/10 rounded-2xl p-8 bg-black/20 backdrop-blur-sm transition-all duration-300 hover:bg-zinc-800/40 hover:border-white/20 group">
             <h3 className="text-white text-2xl font-medium mb-4">
-              enes bayram
+              Enes Bayram
             </h3>
             <a
               href="mailto:enessbyram@gmail.com"
@@ -62,7 +60,7 @@ const About = () => {
 
           <div className="border border-white/10 rounded-2xl p-8 bg-black/20 backdrop-blur-sm transition-all duration-300 hover:bg-zinc-800/40 hover:border-white/20 group">
             <h3 className="text-white text-2xl font-medium mb-4">
-              özgün biberoğlu
+              Özgün Biberoğlu
             </h3>
             <a
               href="mailto:ozgun@lumex.consulting"
@@ -80,7 +78,7 @@ const About = () => {
         {/* İletişim */}
         <div className="flex flex-col items-center gap-4 reveal-point transition-all duration-1000 delay-300">
           <span className="text-gray-500 text-sm font-light">
-            genel sorularınız için
+            {t('about.generalInquiries')}
           </span>
           <a
             href="mailto:lumexconsulting@gmail.com"
