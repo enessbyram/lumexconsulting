@@ -2,6 +2,7 @@
   "header": {
     "home": "Ana Sayfa",
     "services": "Hizmetlerimiz",
+    "references": "Referanslarımız",
     "aboutUs": "Hakkımızda"
   },
   "hero": {
@@ -99,5 +100,20 @@
   "comingSoon": {
     "title": "Çok Yakında",
     "description": "Bu Projenin Geliştirme Süreçleri Titizlikle Devam Ediyor. Kodlarımızı Derliyor, Tasarımı Parlatıyoruz. En Kısa Sürede Yayındayız."
+  },
+  "references": {
+    "title": "Referanslarımız",
+    "solfej": {
+      "title": "Solfej.net - Müzik Platformu",
+      "shortDesc": "Türkülerin sesi, notanın ruhu mottosuyla yola çıkan, türkü dinleyip nota arşivi sunan modern müzik platformu.",
+      "fullDesc": "Solfej.net, Türk halk müziği tutkunları için özel olarak geliştirilmiş modern ve interaktif bir müzik platformudur. Kullanıcılar en sevdikleri türküleri yüksek kalitede dinleyebilir, nota arşivlerine erişebilir ve zengin içerikli kütüphaneden faydalanabilirler. Özelleştirilmiş bir dark mode arayüzü ve dinamik özellikleriyle kullanıcılarına benzersiz bir müzik deneyimi sunar.",
+      "features": [
+        "Kapsamlı Türk Halk Müziği Arşivi",
+        "İnteraktif Nota Görüntüleme Sistemi",
+        "Kullanıcı Dostu Modern Arayüz (Dark Mode)",
+        "Gelişmiş Arama ve Filtreleme",
+        "Yüksek Performanslı Müzik Çalar Entegrasyonu"
+      ]
+    }
   }
 }

@@ -3,6 +3,7 @@ import realEstateSystem from "../assets/images/saling-system.png";
 import programSystem from "../assets/images/program-system.png";
 import communitySystem from "../assets/images/community-system.png";
 import tutoringSystem from "../assets/images/tutoring-system.png";
+import solfejSystem from "../assets/images/solfej-system.png";
 
 // Each project stores i18n translation keys for all text content.
 // Use these keys with the `t()` function from react-i18next.
@@ -18,6 +19,7 @@ export const projectsData = [
     githubLink: "https://github.com/enessbyram/lumex-tutoring-center-system",
     demoLink: "https://lumex-tutoring-center-system.vercel.app/",
     image: tutoringSystem,
+    type: "service"
   },
   {
     id: "universite-topluluk-bilgi-sistemi",
@@ -29,6 +31,7 @@ export const projectsData = [
     githubLink: "https://github.com/enessbyram/lumex-community-system",
     demoLink: "https://lumex-community-system.vercel.app/",
     image: communitySystem,
+    type: "service"
   },
   {
     id: "gym-randevu-sistemi",
@@ -40,6 +43,7 @@ export const projectsData = [
     githubLink: "https://github.com/enessbyram/gym-system",
     demoLink: "https://gym-system.infinityfreeapp.com/?i=1",
     image: gymSystem,
+    type: "service"
   },
   {
     id: "ev-araba-satis-platformu",
@@ -51,6 +55,7 @@ export const projectsData = [
     githubLink: "/coming-soon",
     demoLink: "/coming-soon",
     image: realEstateSystem,
+    type: "service"
   },
   {
     id: "smart-program-system",
@@ -62,5 +67,18 @@ export const projectsData = [
     githubLink: "/coming-soon",
     demoLink: "/coming-soon",
     image: programSystem,
+    type: "service"
   },
+  {
+    id: "solfej-net",
+    titleKey: "references.solfej.title",
+    shortDescKey: "references.solfej.shortDesc",
+    fullDescKey: "references.solfej.fullDesc",
+    featuresKey: "references.solfej.features",
+    technologies: ["React", "Tailwind CSS", "Node.js", "Firebase", "i18n"],
+    githubLink: "https://github.com/enessbyram/solfej-net",
+    demoLink: "https://solfej.net",
+    image: solfejSystem,
+    type: "reference"
+  }
 ];

@@ -2,6 +2,7 @@
   "header": {
     "home": "Home",
     "services": "Services",
+    "references": "References",
     "aboutUs": "About Us"
   },
   "hero": {
@@ -99,5 +100,20 @@
   "comingSoon": {
     "title": "Coming Soon",
     "description": "The Development Process Of This Project Is Carefully Underway. We're Compiling Our Code And Polishing The Design. Launching Very Soon."
+  },
+  "references": {
+    "title": "Our References",
+    "solfej": {
+      "title": "Solfej.net - Music Platform",
+      "shortDesc": "A modern music platform offering a rich archive of Turkish folk music and interactive sheet music.",
+      "fullDesc": "Solfej.net is a modern and interactive music platform specially developed for Turkish folk music enthusiasts. Users can listen to their favorite folk songs in high quality, access extensive sheet music archives, and benefit from a rich content library. With a customized dark mode interface and dynamic features, it offers users a unique musical experience.",
+      "features": [
+        "Comprehensive Turkish Folk Music Archive",
+        "Interactive Sheet Music Viewer",
+        "User-Friendly Modern Interface (Dark Mode)",
+        "Advanced Search and Filtering",
+        "High-Performance Music Player Integration"
+      ]
+    }
   }
 }

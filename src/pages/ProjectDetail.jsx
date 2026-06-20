@@ -27,7 +27,7 @@ const ProjectDetail = () => {
       <div className="relative min-h-screen font-sans selection:bg-purple-500 selection:text-white flex flex-col justify-between">
          <AnimatedBackground />
          <Header />
-         <div className="relative z-10 container mx-auto px-6 pt-40 text-center text-white">
+          <div className="relative z-10 container mx-auto px-6 pt-40 text-center text-white">
             <h1 className="text-3xl">{t('projects.projectNotFound')}</h1>
             <Link to="/services" className="mt-8 inline-block text-purple-400 hover:text-white transition-colors">
               {t('projects.backToServices')}
@@ -76,7 +76,7 @@ const ProjectDetail = () => {
       <main className="relative z-10 container mx-auto px-6 pt-32 pb-20">
         
         {/* Back Link */}
-        <Link to="/services" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8 group text-sm">
+        <Link to={project.type === 'reference' ? '/references' : '/services'} className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8 group text-sm">
             <FontAwesomeIcon icon={faArrowLeft} className="group-hover:-translate-x-1 transition-transform"/>
             {t('projects.back')}
         </Link>

@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import { projectsData } from '../data/projects';
-import gymSystem from "../assets/images/gym-system.png";
-import salingSystem from "../assets/images/saling-system.png";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -10,7 +8,7 @@ const Projects = () => {
 
   // Get the two featured projects directly from projectsData
   const gymProject = projectsData.find(p => p.id === "gym-randevu-sistemi");
-  const realEstateProject = projectsData.find(p => p.id === "ev-araba-satis-platformu");
+  const realEstateProject = projectsData.find(p => p.id === "solfej-net");
 
   // Scroll reveal animation
   useEffect(() => {
@@ -46,11 +44,11 @@ const Projects = () => {
       <div className="w-full container max-w-7xl flex flex-col md:flex-row items-center gap-16 reveal-point transition-all duration-1000">
         {/* Image - Wrapped with Link */}
         <Link
-          to="/project/gym-randevu-sistemi"
+          to={`/project/${gymProject.id}`}
           className="w-full md:w-3/5 overflow-hidden rounded-2xl group cursor-pointer block"
         >
           <img
-            src={gymSystem}
+            src={gymProject.image}
             alt={t(gymProject.titleKey)}
             className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
           />
@@ -80,7 +78,7 @@ const Projects = () => {
 
           {/* Detail Link */}
           <Link
-            to="/project/gym-randevu-sistemi"
+            to={`/project/${gymProject.id}`}
             className="mt-4 text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
           >
             {t('projects.viewDetails')}{" "}
@@ -117,7 +115,7 @@ const Projects = () => {
 
           {/* Detail Link */}
           <Link
-            to="/project/ev-araba-satis-platformu"
+            to={`/project/${realEstateProject.id}`}
             className="mt-4 text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group"
           >
             {t('projects.viewDetails')}{" "}
@@ -129,11 +127,11 @@ const Projects = () => {
 
         {/* Image - Wrapped with Link */}
         <Link
-          to="/project/ev-araba-satis-platformu"
+          to={`/project/${realEstateProject.id}`}
           className="w-full md:w-3/5 overflow-hidden group cursor-pointer block rounded-2xl"
         >
           <img
-            src={salingSystem}
+            src={realEstateProject.image}
             alt={t(realEstateProject.titleKey)}
             className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
           />

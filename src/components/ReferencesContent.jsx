@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { projectsData } from '../data/projects';
 
-const ServicesContent = () => {
+const ReferencesContent = () => {
   const { t } = useTranslation();
   
   useEffect(() => {
@@ -27,13 +27,13 @@ const ServicesContent = () => {
       {/* Title */}
       <div className="w-full max-w-7xl mx-auto mb-16 reveal-point transition-all duration-1000">
         <div className="w-16 h-1 bg-white/50 mb-6"></div>
-        <h1 className="text-white text-5xl md:text-6xl font-light mb-8">{t('services.title')}</h1>
+        <h1 className="text-white text-5xl md:text-6xl font-light mb-8">{t('references.title')}</h1>
       </div>
 
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto">
         
-        {projectsData.filter(p => p.type !== 'reference').map((project, index) => (
+        {projectsData.filter(p => p.type === 'reference').map((project, index) => (
           <Link 
             to={`/project/${project.id}`}
             key={project.id} 
@@ -77,4 +77,4 @@ const ServicesContent = () => {
   );
 };
 
-export default ServicesContent;
+export default ReferencesContent;

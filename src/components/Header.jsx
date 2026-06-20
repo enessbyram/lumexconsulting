@@ -33,6 +33,9 @@ const Header = () => {
           <Link to="/services" className="cursor-pointer hover:text-purple-400 transition-colors">
             {t('header.services')}
           </Link>
+          <Link to="/references" className="cursor-pointer hover:text-purple-400 transition-colors">
+            {t('header.references')}
+          </Link>
         </div>
 
         {/* Logo */}
@@ -102,6 +105,9 @@ const Header = () => {
           </Link>
           <Link to="/services" className="text-3xl font-light tracking-widest hover:text-purple-400 transition-colors" onClick={closeMenu}>
               {t('header.services')}
+          </Link>
+          <Link to="/references" className="text-3xl font-light tracking-widest hover:text-purple-400 transition-colors" onClick={closeMenu}>
+              {t('header.references')}
           </Link>
           <Link to="/about" className="text-3xl font-light tracking-widest hover:text-purple-400 transition-colors" onClick={closeMenu}>
               {t('header.aboutUs')}
